@@ -7,14 +7,15 @@
     <body>
         <input type="text" ng-model="search">
         {{search}}
-        <div ng-repeat="feed in allFeeds | filter: search" class="socialfeed">
+        <div ng-repeat="feed in allFeeds | filter: search | orderBy : date" class="socialfeed">
 
 
             <div class="header">
                 <img ng-src="img/{{feed.provider}}.png">
             </div>
             <div class="main">
-                <h3 class="date">{{feed.datemade | date : 'MMM d, yyyy h:m a '}}</h3>
+                <h3 class="date">{{feed.datemade | date : 'MMM d, yyyy h:mm a '}}</h3>
+                <img ng-src="{{feed.image}}">
                 <p>{{feed.message}}</p>
             </div>
 

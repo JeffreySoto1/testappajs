@@ -72,3 +72,20 @@
 .header3>img{
     float: right;
 }
+.socialfeed.ng-enter,
+.socialfeed.ng-leave {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+
+.socialfeed.ng-enter,
+.socialfeed.ng-leave.ng-leave-active {
+  opacity:0;
+}
+.socialfeed.ng-leave,
+.socialfeed.ng-enter.ng-enter-active {
+  opacity:1;
+}
+.main>img{
+    width: 100%;
+}
