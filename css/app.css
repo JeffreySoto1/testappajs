@@ -1,0 +1,74 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.header {
+    background-color: #3B5998;
+    overflow: hidden;
+    /* padding: 0px; */
+}
+
+.header2    {
+    background-color: #00ACED;
+    overflow: hidden;
+}
+
+.header3{
+    background-color: #517FA4;
+    overflow: hidden;
+}
+.main h3{
+    font-size:1.0em;
+}
+.main .header, .header2, .header3{
+    padding-top: 10px;
+} 
+.socialfeed{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    display: inline-table;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.socialfeed>.main{
+    text-align: center;
+    width: 100%;
+}
+.header>img {
+    float: right;
+}
+.header2>img{
+    float: right;
+}
+.header3>img{
+    float: right;
+}

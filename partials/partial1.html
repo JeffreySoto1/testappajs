@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>FB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="text" ng-model="search">
+        {{search}}
+        <div ng-repeat="feed in allFeeds | filter: search" class="socialfeed">
+
+
+            <div class="header">
+                <img ng-src="img/{{feed.provider}}.png">
+            </div>
+            <div class="main">
+                <h3 class="date">{{feed.datemade | date : 'MMM d, yyyy h:m a '}}</h3>
+                <p>{{feed.message}}</p>
+            </div>
+
+        </div>
+    </body>
+</html>
